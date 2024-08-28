@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <table>
+    <form action="./submit.html">
+        <label for="email">Email:</label>
+        <input type="email" required id="email" placeholder="eg:abc@gmail.com"><br/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" ><br/>
+        <label for="age">Age:</label>
+        <input type="number"  id="age" required min="18" max="100"><br/>
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" required ><br/>
+        <label for="file">File:</label>
+        <input type="file" id="file" accept=".pdf,.docx,.jpeg "required><br/>
+        <input type="checkbox" > Agree <br>
+        <label for="gender">Gender</label>
+        <input type="radio"  name="gender"><span>Male</span>
+        <input type="radio"  name="gender"><span>Female</span><br>
+        <label for="username">Name:</label>
+        <input type="text" id="username"><br>
+        <select>
+            <option>select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <br>
+        <select name="country">
+            <optgroup label="country">
+            <option>India</option>
+            <option>USA</option>
+            </optgroup>
+            <optgroup label="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </optgroup>
+        </select><br>
+        <input list="countries"> 
+        <datalist id="countries">
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+        </datalist><br>
+        <input type="submit">
+
+
+
+    </form>
+    </table>
+</body>
+</html>
